@@ -82,4 +82,11 @@ pub mod cloud {
         #[path = "google.cloud.kms.v1.rs"]
         pub mod v1;
     }
+
+    #[cfg(feature = "scheduler")]
+    #[path = ""]
+    pub mod scheduler {
+        #[path = "google.cloud.scheduler.v1.rs"]
+        pub mod v1;
+    }
 }
